@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hello, It's Jeff</title>
-</head>
-<body>
-	<style>
-	.container {
-	 height: 200px;
-	 position: relative;
-	}
 
-	.center {
-	 margin: 0;
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 -ms-transform: translate(-50%, -50%);
-	 transform: translate(-50%, -50%);
-	}
-	</style>
-	<div class="container">
-		<div class="center">
-			<p>Hi there.</p>
-		</div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello, Jeff Lett here</title>
+    <style type='text/css'>
+      * {
+        background-color: none;
+        font-family: "Hobo Std", Impact, "Comic Sans MS";
+        font-size: 15px;
+        color: #FFFFFF;
+      }
+
+      body {
+        background-color: #FFFF00;
+        background-image: url(docs/assets/images/orbs.jpg);
+        font-family: Comic Sans MS, Comic Sans;
+        font-size: 15px;
+        color: #FFFFFF;
+      }
+
+      p {
+        background-color: #FFFFFF;
+        color: #990000;
+        background-image: none;
+        font-family: "Hobo Std", Impact, "Comic Sans MS";
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .container {
+        height: 200px;
+        position: relative;
+      }
+    </style>
+    <script>
+      var stupidMessages = [
+        'Oh, Hai y\'all!',
+        'Well, Hi!',
+        'Hello!  Isn\'t this exciting!',
+        'Hi there',
+      ];
+
+      window.onload = function updateStupidMessage() {
+        document.getElementById('stupid-message').innerText = stupidMessages[Math.floor(Math.random() * (stupidMessages.length))];
+      }
+    </script>
+  </head>
+	<!--
+	I'm shocked if you're seeing this, but contact me at @jeffctown on Insta
+	-->
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="center">
+          <img src='docs/assets/images/computer.gif' alt='shitty 90s computer gif' />
+          <img src='docs/assets/images/computer.gif' alt='shitty 90s computer gif' />
+          <img src='docs/assets/images/computer.gif' alt='shitty 90s computer gif' />
+          <img src='docs/assets/images/computer.gif' alt='shitty 90s computer gif' />
+          <img src='docs/assets/images/computer.gif' alt='shitty 90s computer gif' />
+          <img src='docs/assets/images/computer.gif' alt='shitty 90s computer gif' />
+        </div>
+        <br />
+        <img class="center" src='docs/assets/images/construction.gif' alt='shitty 90s construction gif' />
+        <p id="stupid-message"></p>
+        <img class="center" src='docs/assets/images/computer-highfivebloke.gif' alt='shitty 90s computer high five gif' />
+        <br />
+        <img class="center" src='docs/assets/images/computer-happycomputer.gif' alt='shitty 90s happy computer gif' />
+        <br />
+        <img class="center" src='docs/assets/images/counter.gif' alt='shitty 90s counter gif' />
+      </div>
+    </div>
+  </body>
+
 </html>
