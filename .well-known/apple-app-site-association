@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "V9H5JN9833.com.cnn.weather",
+          "V9H5JN9833.com.cnn.np.thunderstrike"
+        ],
+        "components": [
+          { "/": "/weather/live/*" },
+          { "/": "/weather/explore/*" },
+          { "/": "/weather/article/*" }
+        ]
+      }
+    ]
+  }
+}
